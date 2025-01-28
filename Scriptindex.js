@@ -62,7 +62,7 @@ const mainContentData = [
   {
     name: "Games I Made",
     image: "/images.png",
-    link: "/Home-Page-Stuff/Games Page/index.html",
+    link: "/Home-Page-Stuff/Games-Page/index.html",
   },
   {
     name: "Credits",
