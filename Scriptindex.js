@@ -62,17 +62,17 @@ const mainContentData = [
   {
     name: "Games I Made",
     image: "/images.png",
-    link: "/Home Page Stuff/Games Page/index.html",
+    link: "/Home-Page-Stuff/Games Page/index.html",
   },
   {
     name: "Credits",
     image: "images1.png",
-    link: "/Home Page Stuff/Credits.html",
+    link: "/Home-Page-Stuff/Credits.html",
   },
   {
     name: "Games Comeing Soon",
     image: "/gamestooadd.jpeg",
-    link: "/Home Page Stuff/Games Comeing Soon.html",
+    link: "/Home-Page-Stuff/Games Comeing Soon.html",
   },
 ];
 mainContentData.forEach(item => {
