@@ -72,7 +72,7 @@ const mainContentData = [
   {
     name: "Games Comeing Soon",
     image: "/gamestooadd.jpeg",
-    link: "/Home-Page-Stuff/Games Comeing Soon.html",
+    link: "/Home-Page-Stuff/Games-Comeing-Soon.html",
   },
 ];
 mainContentData.forEach(item => {
