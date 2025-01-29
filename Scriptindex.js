@@ -66,7 +66,7 @@ const mainContentData = [
   },
   {
     name: "Credits",
-    image: "images1.png",
+    image: "/Images/download (22).jpeg",
     link: "/Home-Page-Stuff/Credits.html",
   },
   {
