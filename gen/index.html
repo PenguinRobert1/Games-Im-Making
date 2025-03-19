@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Generator</title>
+</head>
+<body>
+    <h1>Image Generator</h1>
+    <form id="imageForm">
+        <label for="text">Enter text:</label>
+        <input type="text" id="text" name="text" value="Hello, World!">
+        <button type="submit">Generate Image</button>
+    </form>
+    <br>
+    <div id="imageContainer">
+        <img id="generatedImage" src="" alt="Generated Image" style="display: none;">
+    </div>
+
+    <script>
+        document.getElementById('imageForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const formData = new FormData(this);
+            fetch('/generate_image', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.blob())
+            .then(blob => {
+                const url = URL.createObjectURL(blob);
+                const img = document.getElementById('generatedImage');
+                img.src = url;
+                img.style.display = 'block';
+            })
+            .catch(error => console.error('Error:', error));
+        });
+    </script>
+</body>
+</html>
