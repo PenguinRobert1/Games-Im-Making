@@ -61,17 +61,17 @@ const toggleSideBar = () => {
 const mainContentData = [
   {
     name: "Games I Made",
-    image: "/images.png",
+    image: "/Images/game.webp",
     link: "/Home-Page-Stuff/Games-Page/index.html",
   },
   {
     name: "Credits",
-    image: "/Images/cred.jpeg",
+    image: "/Images/cred.webp",
     link: "/Home-Page-Stuff/Credits.html",
   },
   {
     name: "Games Comeing Soon",
-    image: "/gamestooadd.jpeg",
+    image: "/Images/com.webp",
     link: "/Home-Page-Stuff/Games-Comeing-Soon.html",
   },
 ];

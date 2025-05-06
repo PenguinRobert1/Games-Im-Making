@@ -174,7 +174,33 @@
     color: black;
   }
   
-  
+  .game {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 10px;
+    position: relative;
+    width: fit-content; /* Dynamically adjust width to fit content */
+    height: fit-content; /* Dynamically adjust height to fit content */
+    transition: all 0.3s ease-in-out; /* Smooth transition for the box */
+  }
+
+  .game:hover {
+    background-color: var(--game-icon-hover-color);
+    padding: 15px; /* Slightly increase padding when hovered */
+  }
+
+  .game img {
+    max-width: 100%; /* Ensure the image doesn't overflow */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 200ms;
+    border: 1px solid #00909067;
+  }
   
   @media (max-width: 700px) {
     body {
@@ -293,4 +319,22 @@
     }
   } */
   
-  
+
+img[src$="com.webp"] {
+  width: 370px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+  transition: transform 0.3s, width 0.3s, height 0.3s;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 1px solid #00909067;
+  background-color: #fff;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
+  transform: scale(1);
+}
+
+img[src$="com.webp"]:hover {
+  transform: scale(1.2); /* Makes the image grow */
+}
