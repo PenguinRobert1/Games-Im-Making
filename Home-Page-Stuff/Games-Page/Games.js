@@ -65,6 +65,11 @@ const mainContentData = [
     link: "/index.html",
   },
   {
+    name: "Minesweeper",
+    image: "",
+    link: "/game_for_miller/game.html",
+  },
+  {
     name: "Home Made Cookie Clicker",
     image: "images1.png",
     link: "/GameIndex.html",
